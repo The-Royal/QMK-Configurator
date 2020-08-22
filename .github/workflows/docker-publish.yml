@@ -19,6 +19,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Init submodules
+        run: git submodule update --init --recursive
+
+      - name: Update submodules to master
+        run: |
+          cd qmk_firmware
+          git reset --hard
+          git checkout master
+          git pull
+          git reset --hard
+
       - name: Build image
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
