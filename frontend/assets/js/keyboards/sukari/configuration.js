@@ -369,7 +369,7 @@ sukari.keySections = [
           },
           {
             id: 'k2A',
-            value: 'SCOL',
+            value: 'SCLN',
             type: 'normal',
             secondary: null,
             showMenu: false,
@@ -377,7 +377,7 @@ sukari.keySections = [
           },
           {
             id: 'k2B',
-            value: 'QUOTE',
+            value: 'QUOT',
             type: 'normal',
             secondary: null,
             showMenu: false,
@@ -451,7 +451,7 @@ sukari.keySections = [
           },
           {
             id: 'k38',
-            value: 'COMMA',
+            value: 'COMM',
             type: 'normal',
             secondary: null,
             showMenu: false,
@@ -475,7 +475,7 @@ sukari.keySections = [
           },
           {
             id: 'k3B',
-            value: 'ENTER',
+            value: 'ENT',
             type: 'normal',
             secondary: null,
             showMenu: false,
@@ -504,7 +504,7 @@ sukari.keySections = [
           },
           {
             id: 'k42',
-            value: 'MENU',
+            value: 'LCTL',
             type: 'normal',
             secondary: null,
             showMenu: false,
@@ -531,7 +531,7 @@ sukari.keySections = [
           },
           {
             id: 'k45',
-            value: 'SPACE',
+            value: 'SPC',
             type: 'normal',
             secondary: null,
             showMenu: false,
@@ -540,7 +540,7 @@ sukari.keySections = [
           },
           {
             id: 'k46',
-            value: 'SPACE',
+            value: 'SPC',
             type: 'normal',
             secondary: null,
             showMenu: false,
