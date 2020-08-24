@@ -2,7 +2,7 @@ Vue.component('keyboard-selector-component', {
   props: ['keyboards', 'value'],
   template: `
   <div class="keyboardbox">
-  	<h3>Keyboards</h3>
+  	<h1>Royal's Awesome Configurator</h1>
     <select @change="changeKeyboard"
     				v-model="value">
     	<option v-for="keyboard in keyboards"
