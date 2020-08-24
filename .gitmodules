@@ -1,3 +1,3 @@
 [submodule "qmk_firmware"]
 	path = qmk_firmware
-	url = https://github.com/The-Royal/qmk_firmware.git
+	url = https://github.com/The-Royal/qmk_firmware/tree/royal-configurator-branch.git
