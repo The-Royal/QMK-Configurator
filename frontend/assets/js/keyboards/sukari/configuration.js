@@ -70,22 +70,7 @@ sukari.configKeymap.positions = [
 ];
 
 // zones
-sukari.zones = [
-    {
-        label: 'Bottom Row',
-        value: 0,
-        choices: [
-            {
-                code: 0,
-                name: '5x12'
-            },
-            {
-                code: 1,
-                name: 'large spacebar'
-            }
-        ]
-    }
-]
+sukari.zones = []
 
 // ui keymap
 sukari.keySections = [
@@ -580,50 +565,6 @@ sukari.keySections = [
             shape: 'k100'
           }
         ]
-        [
-          {
-            id: 'k40',
-            value: 'DEL',
-            type: 'normal',
-            secondary: null,
-            showMenu: false,
-            shape: 'k100'
-          },
-          {
-            id: 'k41',
-            value: 'LALT',
-            type: 'normal',
-            secondary: null,
-            showMenu: false,
-            shape: 'k150'
-          },
-          {
-            id: 'k42',
-            value: 'SPACE',
-            type: 'normal',
-            secondary: null,
-            showMenu: false,
-            shape: 'k700'
-          },
-          {
-            id: 'k4A',
-            value: 'RGUI',
-            type: 'normal',
-            secondary: null,
-            showMenu: false,
-            shape: 'k150'
-          },
-          {
-            id: 'k4B',
-            value: 'RCTL',
-            type: 'normal',
-            secondary: null,
-            showMenu: false,
-            shape: 'k100'
-          }
-
-        ]
-
     }
 
 ];
@@ -642,7 +583,7 @@ sukari.keymap = function() {
         layer.push(ks.row2);
         layer.push(ks.row3);
         layer.push(ks.row4);
-        layer.push(ks.row5[zones[0].value]);
+        layer.push(ks.row5);
         keymap.push(layer);
     }
 
