@@ -181,7 +181,7 @@ sukari.keySections = [
           },
           {
             id: 'k0B',
-            value: 'MINUS',
+            value: 'EQL',
             type: 'normal',
             secondary: null,
             showMenu: false,
