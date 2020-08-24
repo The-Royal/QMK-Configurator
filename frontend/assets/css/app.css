@@ -335,15 +335,14 @@ body {
 }
 
 .context-menu-shell {
-  position: absolute;
+  position: fixed;
   border-radius: 5px;
   padding: 10px;
-  z-index: 10;
   width: 700px;
   height: 500px;
-  left: 925px;
-  top: 590px;
-  background-color: #c0c0c0f5;
+  left: 750px;
+  top: 365px;
+  background-color: #c0c0c0;
 }
 
 .context-menu {
