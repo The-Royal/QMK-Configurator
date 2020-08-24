@@ -70,7 +70,22 @@ sukari.configKeymap.positions = [
 ];
 
 // zones
-sukari.zones = []
+sukari.zones = [
+    {
+        label: 'Bottom Row',
+        value: 0,
+        choices: [
+            {
+                code: 0,
+                name: '5x12'
+            },
+            {
+                code: 1,
+                name: 'Big-Spacebar'
+            }
+        ]
+    }
+]
 
 // ui keymap
 sukari.keySections = [
@@ -467,14 +482,16 @@ sukari.keySections = [
             shape: 'k100'
           }
         ],
-        row5: [
+        bottomRow: [
+        [
           {
             id: 'k40',
             value: 'DEL',
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k41',
@@ -482,7 +499,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k42',
@@ -490,7 +508,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k43',
@@ -498,7 +517,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k44',
@@ -506,7 +526,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k45',
@@ -514,7 +535,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k46',
@@ -522,7 +544,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k47',
@@ -530,7 +553,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k48',
@@ -538,7 +562,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k49',
@@ -546,7 +571,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k4A',
@@ -554,7 +580,8 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
           },
           {
             id: 'k4B',
@@ -562,12 +589,61 @@ sukari.keySections = [
             type: 'normal',
             secondary: null,
             showMenu: false,
-            shape: 'k100'
+            shape: 'k100',
+            zone: 'Bottom Row'
+          }
+      ],
+      [
+          {
+            id: 'k40',
+            value: 'DEL',
+            type: 'normal',
+            secondary: null,
+            showMenu: false,
+            shape: 'k100',
+            zone: 'Bottom Row'
+          },
+          {
+            id: 'k41',
+            value: 'LALT',
+            type: 'normal',
+            secondary: null,
+            showMenu: false,
+            shape: 'k150',
+            zone: 'Bottom Row'
+          },
+          {
+            id: 'k42',
+            value: 'SPACE',
+            type: 'normal',
+            secondary: null,
+            showMenu: false,
+            shape: 'k700',
+            zone: 'Bottom Row'
+          },
+          {
+            id: 'k4A',
+            value: 'RGUI',
+            type: 'normal',
+            secondary: null,
+            showMenu: false,
+            shape: 'k150',
+            zone: 'Bottom Row'
+          },
+          {
+            id: 'k4B',
+            value: 'RCTL',
+            type: 'normal',
+            secondary: null,
+            showMenu: false,
+            shape: 'k100',
+            zone: 'Bottom Row'
           }
         ]
+      ]
     }
-
 ];
+
 
 sukari.keymap = function() {
     var keymap = [];
@@ -583,7 +659,7 @@ sukari.keymap = function() {
         layer.push(ks.row2);
         layer.push(ks.row3);
         layer.push(ks.row4);
-        layer.push(ks.row5);
+        layer.push(ks.bottomRow[zones[0].value])
         keymap.push(layer);
     }
 
