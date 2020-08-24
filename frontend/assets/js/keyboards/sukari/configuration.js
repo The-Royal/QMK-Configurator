@@ -642,7 +642,7 @@ sukari.keymap = function() {
         layer.push(ks.row2);
         layer.push(ks.row3);
         layer.push(ks.row4);
-        layer.push(ks.row5[zones[1].value]);
+        layer.push(ks.row5[zones[0].value]);
         keymap.push(layer);
     }
 
